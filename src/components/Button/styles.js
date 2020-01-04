@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Button = styled.button`
 	background-color: #f7941e;
-	border: 1px solid;
+	border: 1px solid #f7941e;
 	border-radius: 5px;
 	color: #fff;
 	text-transform: uppercase;
@@ -11,7 +11,7 @@ export const Button = styled.button`
 	&:hover {
 		background-color: transparent;
 		border-color: #f7941e;
-		color: #f7941e;
+		color: #fff;
 	}
 
 	&.inverse {

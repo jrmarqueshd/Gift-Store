@@ -8,6 +8,7 @@ export const HeaderWrapper = styled.header`
 	top: 0;
 	left: 0;
 	width: 100%;
+	z-index: 100;
 
 	@media (max-width: 767px) {
 		height: 75px;
@@ -54,6 +55,7 @@ export const List = styled.ul`
 		align-items: center;
 		justify-content: center;
 		flex: 1;
+		z-index: 101;
 	}
 `;
 
@@ -84,6 +86,6 @@ export const MenuToggle = styled.button`
 		position: fixed;
 		top: 15px;
 		right: 15px;
-		z-index: 100;
+		z-index: 102;
 	}
 `;

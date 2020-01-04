@@ -9,4 +9,9 @@ export const Container = styled.section`
 	padding-left: 15px;
 	width: 100%;
 	max-width: 1440px;
+
+	&.no-padding {
+		padding-right: 0;
+		padding-left: 0;
+	}
 `;

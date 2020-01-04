@@ -23,6 +23,8 @@ export const DefaultStyle = createGlobalStyle`
     }
 
     h2, h3, h4, h5{
+        font-weight: 400;
+        
         &.semibold{
             font-weight: 600;
         }
