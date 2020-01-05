@@ -11,7 +11,7 @@ export const Button = styled.button`
 	&:hover {
 		background-color: transparent;
 		border-color: #f7941e;
-		color: #fff;
+		color: #f7941e;
 	}
 
 	&.inverse {

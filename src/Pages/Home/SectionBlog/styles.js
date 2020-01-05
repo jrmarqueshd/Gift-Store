@@ -13,6 +13,7 @@ export const Title = styled.h2`
 `;
 
 export const Content = styled.p`
+	margin-bottom: 60px;
 	padding-right: 15px;
 	padding-left: 15px;
 	text-align: center;

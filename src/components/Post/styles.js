@@ -35,8 +35,15 @@ export const Description = styled.figcaption`
 	width: 100%;
 
 	&:hover {
-		border: 1px solid rgba(0, 0, 0, 0.1);
-		box-shadow: 5pt 5pt 5pt 5pt rgba(0, 0, 0, 0.05);
+		box-shadow: 5pt 5pt 5pt 5pt rgba(0, 0, 0, 0.1);
+	}
+
+	a {
+		&:hover {
+			& > * {
+				color: #f7941e;
+			}
+		}
 	}
 
 	@media (max-width: 492px) {
@@ -64,6 +71,10 @@ export const Description = styled.figcaption`
 			justify-content: space-between;
 			height: 100%;
 			padding: 40px;
+		}
+
+		div {
+			padding-top: ${props => (!props.first ? "30px" : "0")};
 		}
 	}
 `;
