@@ -68,4 +68,10 @@ export const DefaultStyle = createGlobalStyle`
         box-shadow: 0 0 2pt 1pt rgba(179, 230, 254, 1) !important;
         outline-color: transparent !important;
     }
+
+    .wrapper-button{
+        @media (max-width: 767px){
+            width: 100%;
+        }
+    }
 `;
