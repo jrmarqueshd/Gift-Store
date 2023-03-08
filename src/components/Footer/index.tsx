@@ -1,5 +1,3 @@
-import React from "react";
-
 import { Link } from "react-router-dom";
 import {
 	TiSocialFacebook,
@@ -22,9 +20,9 @@ import {
 } from "./styles";
 
 export default function Footer() {
-	function setReleaseYear(since) {
+	function setReleaseYear(since: number) {
 		let date = new Date();
-		let year = date.getUTCFullYear(-3);
+		let year = date.getUTCFullYear();
 
 		return since === year ? `${year} ` : `${since} - ${year} `;
 	}
@@ -72,7 +70,7 @@ export default function Footer() {
 					</SocialWrapper>
 				</Menu>
 
-				<Copyrights>&copy; {setReleaseYear(2010)} Privacy - Terms</Copyrights>
+				<Copyrights>&copy; {setReleaseYear(2020)} Privacy - Terms</Copyrights>
 			</Container>
 		</FooterWrapper>
 	);

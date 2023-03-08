@@ -1,10 +1,8 @@
-import React from "react";
-
-import { Container } from "../../../components/Wrapper/styles";
-import Post from "../../../components/Post/index";
+import { Container } from "../../components/Wrapper/styles";
+import Post from "../../components/Post/index";
 import { Title, Content, PostWrapper } from "./styles";
 
-import postImage from "../../../assets/images/postImage.png";
+import postImage from "../../assets/images/postImage.png";
 
 export default function SectionBlog() {
 	return (

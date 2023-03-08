@@ -1,8 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 
 export const DefaultStyle = createGlobalStyle`
-    @import url('https://fonts.googleapis.com/css?family=Homemade+Apple|Kulim+Park:400,600,600i,700,700i&display=swap');
-
     *{
         box-sizing: border-box;
         color: inherit;

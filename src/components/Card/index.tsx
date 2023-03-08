@@ -1,11 +1,10 @@
-import React from "react";
-
 import { Link } from "react-router-dom";
 import { IoIosArrowForward } from "react-icons/io";
 
 import { Figure, Image, Description, Title } from "./styles";
+import { CardProps } from "./interfaces";
 
-export default function Card({ title, destachImage, seeMoreLink }) {
+export default function Card({ title, destachImage, seeMoreLink }: CardProps) {
 	return (
 		<Figure>
 			<Image src={destachImage} />

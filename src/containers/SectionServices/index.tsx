@@ -1,13 +1,11 @@
-import React from "react";
-
-import { Container } from "../../../components/Wrapper/styles";
+import { Container } from "../../components/Wrapper/styles";
 import { Title, Content, CardWrapper } from "./styles";
-import Card from "../../../components/Card/index";
+import Card from "../../components/Card/index";
 
-import birthday from "../../../assets/images/birthday.png";
-import anniversary from "../../../assets/images/anniversary.png";
-import valentine from "../../../assets/images/valentine.png";
-import christmas from "../../../assets/images/christmas.png";
+import birthday from "../../assets/images/birthday.png";
+import anniversary from "../../assets/images/anniversary.png";
+import valentine from "../../assets/images/valentine.png";
+import christmas from "../../assets/images/christmas.png";
 
 export default function Home() {
 	return (

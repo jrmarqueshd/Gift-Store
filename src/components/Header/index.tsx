@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 import { Link } from "react-router-dom";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
@@ -12,7 +12,7 @@ export default function Header() {
 	const [toggle, setToggle] = useState(false);
 
 	function toggleMenu() {
-		toggle ? setToggle(false) : setToggle(true);
+		setToggle(!toggle);
 	}
 
 	return (

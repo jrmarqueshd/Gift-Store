@@ -1,13 +1,11 @@
-import React from "react";
-
 import { Link } from "react-router-dom";
 
-import { Container } from "../../../components/Wrapper/styles";
-import { Button } from "../../../components/Button/styles";
+import { Container } from "../../components/Wrapper/styles";
+import { Button } from "../../components/Button/styles";
 import { Figure, Description, Title, Content, Image } from "./styles";
 
-import bg1 from "../../../assets/images/background-1.png";
-import bg2 from "../../../assets/images/background-2.png";
+import bg1 from "../../assets/images/background-1.png";
+import bg2 from "../../assets/images/background-2.png";
 
 export default function SectionAbout() {
 	return (

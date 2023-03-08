@@ -11,7 +11,7 @@ export const Figure = styled.figure`
 	}
 `;
 
-export const Image = styled.div`
+export const Image = styled.div<{ background: string }>`
 	background-image: url(${props => props.background});
 	background-size: cover;
 	background-position: center center;

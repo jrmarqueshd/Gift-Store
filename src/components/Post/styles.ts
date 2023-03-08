@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Figure = styled.figure`
+export const Figure = styled.figure<{ first?:boolean }>`
 	display: flex;
 	padding: 15px;
 
@@ -27,7 +27,7 @@ export const Image = styled.img`
 	}
 `;
 
-export const Description = styled.figcaption`
+export const Description = styled.figcaption<{ first?: boolean }>`
 	background-color: ${props => (props.first ? "#231f20" : "transparent")};
 	color: ${props => (!props.first ? "#231f20" : "#fff")};
 	padding: 15px;
@@ -84,7 +84,7 @@ export const Author = styled.mark`
 	font-size: 0.875rem;
 `;
 
-export const Title = styled.h4`
+export const Title = styled.h4<{ first?: boolean }>`
 	font-size: ${props => (props.first ? "2.66rem" : "1.33rem")};
 	font-weight: ${props => (!props.first ? "700" : "400")};
 	margin-top: 40px;

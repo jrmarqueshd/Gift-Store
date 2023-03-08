@@ -1,6 +1,5 @@
-import React from "react";
-
 import { Link } from "react-router-dom";
+import { PostProps } from "./interfaces";
 
 import { Figure, Image, Description, Title, Author, Content } from "./styles";
 
@@ -11,12 +10,12 @@ export default function Post({
 	destachImage,
 	description,
 	readMoreLink
-}) {
+}: PostProps) {
 	return (
 		<Figure first={first}>
 			{destachImage ? <Image src={destachImage} /> : ""}
 			<Description first={first}>
-				<Link to={readMoreLink}>
+				<Link to={readMoreLink || ""}>
 					<Author>{author ? author : ""}</Author>
 					<Title first={first}>{title}</Title>
 					<Content>{description ? description : ""}</Content>
