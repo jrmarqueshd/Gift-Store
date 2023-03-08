@@ -1,25 +1,28 @@
-import React from "react";
-
 import { DefaultStyle } from "./styles/GlobalStyles";
 
 import { BrowserRouter as Router, Route, Routes as Switch } from "react-router-dom";
+import { lazy, Suspense } from "react";
 
-import Header from "./components/Header/index";
-import Footer from "./components/Footer/index";
-import Home from "./Pages/Home";
+const Header = lazy(() => import(/* webpackChunkName: "[request]" */"./components/Header/index"));
+const Footer = lazy(() => import(/* webpackChunkName: "[request]" */"./components/Footer/index"));
+const Home = lazy(() => import(/* webpackChunkName: "[request]" */"./Pages/Home"));
 
 function App() {
 	return (
-		<>
-			<Router>
-				<DefaultStyle />
+		<Router>
+			<DefaultStyle />
+			<Suspense fallback={<div>loading</div>}>
 				<Header />
-				<Switch>
-					<Route path="/" element={<Home />} />
-				</Switch>
+			</Suspense>
+			
+			<Switch>
+				<Route path="/" element={<Home />} />
+			</Switch>
+
+			<Suspense fallback={<div>loading</div>}>
 				<Footer />
-			</Router>
-		</>
+			</Suspense>
+		</Router>
 	);
 }
 

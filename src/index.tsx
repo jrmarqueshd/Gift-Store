@@ -1,6 +1,7 @@
+import { lazy, Suspense } from "react";
 import ReactDOM from "react-dom/client";
 
-import App from "./App";
+const App = lazy(() => import(/* webpackChunkName: "[request]" */"./App"));
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
-root.render(<App />);
+root.render(<Suspense fallback={<div>Carregando APP</div>}><App /></Suspense>);
